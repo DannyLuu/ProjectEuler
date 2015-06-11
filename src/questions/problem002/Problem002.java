@@ -1,4 +1,4 @@
-package problem002;
+package questions.problem002;
 
 /**
  * Even Fibonacci numbers

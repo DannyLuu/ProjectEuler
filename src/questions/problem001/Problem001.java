@@ -1,4 +1,4 @@
-package problem001;
+package questions.problem001;
 
 /**
  * Multiples of 3 and 5
