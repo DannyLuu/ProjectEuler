@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-import problem001.Problem001;
-import problem002.Problem002;
+import questions.problem001.Problem001;
+import questions.problem002.Problem002;
 
 /**
  * 
