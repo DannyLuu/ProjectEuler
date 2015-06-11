@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Java class files
+*.class
+
 # =========================
 # Operating System Files
 # =========================
@@ -42,5 +45,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# Java class files
-*.class
+
+
