@@ -13,7 +13,9 @@ package problem002;
  * @author Danny Luu
  *
  */
+
 public class Problem002 {
+	static long MAX_FIB_VALUE = 4000000;
 	
 	// Base Cases
 	int a = 1;
@@ -60,7 +62,39 @@ public class Problem002 {
 		return fibTailResursion(y, x + y, count-1);
 	}
 	
+	/**
+	 * Calculates the sum of even fib numbers from fib(1) to fib(x)
+	 * @param x
+	 * @return
+	 */
 	public int sumOfEvenFibNumbers(int x) {
-		
+		int sum = 0;
+		int fibNum = 0;
+
+		for (int i = 1; i <= x; i++) {
+			fibNum = fib2(i);
+			if (fibNum % 2 == 0) {
+				sum += fibNum;
+			}	
+		}
+
+		return sum;
+	}
+	
+	public int sumOfEvenFibNumbersUnderMaxValue() {
+		int sum = 0;
+		int count = 1;
+		int fibNum = 0;
+
+		while(fib2(count) < MAX_FIB_VALUE) {
+			fibNum = fib2(count);
+			
+			if (fibNum % 2 == 0) {
+				sum += fibNum;
+			}
+			++count;
+		}
+
+		return sum;
 	}
 }

@@ -31,9 +31,7 @@ public class ProjectEulerApplication {
 
 			case "2":
 				Problem002 problem002 = new Problem002();
-				for (int i = 1; i <= 10; i++) {
-					System.out.println(problem002.fib2(i));
-				}
+				System.out.println(problem002.sumOfEvenFibNumbersUnderMaxValue());
 				System.out.println();
 				break;
 			case "q":
