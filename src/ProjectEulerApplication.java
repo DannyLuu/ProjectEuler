@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 import questions.problem001.Problem001;
 import questions.problem002.Problem002;
+import questions.problem003.Problem003;
 
 /**
  * 
@@ -17,7 +18,7 @@ public class ProjectEulerApplication {
 
 		do {
 			System.out.println("What problem would you like to see?");
-			System.out.println("Options: 1 - 2");
+			System.out.println("Options: 1 - 3");
 			System.out.println("Q - quit");
 			problem = in.nextLine();
 			
@@ -32,6 +33,12 @@ public class ProjectEulerApplication {
 			case "2":
 				Problem002 problem002 = new Problem002();
 				System.out.println(problem002.sumOfEvenFibNumbersUnderMaxValue());
+				System.out.println();
+				break;
+			
+			case "3":
+				Problem003 problem003 = new Problem003();
+				System.out.println(problem003.largestPrimeFactor(600851475143L));
 				System.out.println();
 				break;
 			case "q":
