@@ -4,6 +4,7 @@ import questions.problem001.Problem001;
 import questions.problem002.Problem002;
 import questions.problem003.Problem003;
 import questions.problem004.Problem004;
+import questions.problem006.Problem006;
 
 /**
  * 
@@ -15,7 +16,7 @@ public class ProjectEulerApplication {
 	public static void main(String[] args) {
 		
 		// Number of completed questions
-		int numOfQuestions = 4;
+		int numOfQuestions = 6;
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		String problem = null;
@@ -49,6 +50,12 @@ public class ProjectEulerApplication {
 			case "4":
 				Problem004 problem004 = new Problem004();
 				System.out.println(problem004.largestPalindromFromProductOfXNums(3));
+				System.out.println();
+				break;
+				
+			case "6":
+				Problem006 problem006 = new Problem006();
+				System.out.println(problem006.differenceBetweenSSO_SOS(100));
 				System.out.println();
 				break;
 			case "q":
