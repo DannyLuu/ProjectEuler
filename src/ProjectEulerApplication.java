@@ -5,9 +5,10 @@ import questions.problem002.Problem002;
 import questions.problem003.Problem003;
 import questions.problem004.Problem004;
 import questions.problem006.Problem006;
+import questions.problem007.Problem007;
 
 /**
- * 
+ * The main program to run all of the questions.
  * @author Danny Luu
  *
  */
@@ -16,7 +17,7 @@ public class ProjectEulerApplication {
 	public static void main(String[] args) {
 		
 		// Number of completed questions
-		int numOfQuestions = 6;
+		int numOfQuestions = 7;
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
 		String problem = null;
@@ -56,6 +57,12 @@ public class ProjectEulerApplication {
 			case "6":
 				Problem006 problem006 = new Problem006();
 				System.out.println(problem006.differenceBetweenSSO_SOS(100));
+				System.out.println();
+				break;
+			
+			case "7":
+				Problem007 problem007 = new Problem007();
+				System.out.println(problem007.primeOf(10001));
 				System.out.println();
 				break;
 			case "q":
