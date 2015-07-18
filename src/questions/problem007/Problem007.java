@@ -14,6 +14,12 @@ public class Problem007 {
 	
 	private Problem003 problem003 = new Problem003();
 	
+	/**
+	 * Fuction returning the X'th prime number in the series.
+	 * 2, 3, 5 are the first three prime numbers.
+	 * @param x
+	 * @return the x'th prime number
+	 */
 	public int primeOf(int x) {
 		int count = x;
 		int temp = 1;
