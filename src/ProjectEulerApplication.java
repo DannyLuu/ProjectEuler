@@ -6,6 +6,7 @@ import questions.problem003.Problem003;
 import questions.problem004.Problem004;
 import questions.problem006.Problem006;
 import questions.problem007.Problem007;
+import questions.problem008.Problem008;
 
 /**
  * The main program to run all of the questions.
@@ -16,9 +17,9 @@ public class ProjectEulerApplication {
 
 	public static void main(String[] args) {
 		
-		// Number of completed questions
-		int numOfQuestions = 7;
-		// TODO Auto-generated method stub
+		// Number of questions
+		int numOfQuestions = 8;
+
 		Scanner in = new Scanner(System.in);
 		String problem = null;
 
@@ -63,6 +64,11 @@ public class ProjectEulerApplication {
 			case "7":
 				Problem007 problem007 = new Problem007();
 				System.out.println(problem007.primeOf(10001));
+				System.out.println();
+				break;
+			case "8":
+				Problem008 problem008 = new Problem008();
+				System.out.println(problem008.greatestProduct(13));
 				System.out.println();
 				break;
 			case "q":
